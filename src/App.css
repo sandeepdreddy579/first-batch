@@ -1,21 +1,77 @@
+.appContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+}
+
+#heading {
+  background-color: rgb(23, 161, 207);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+.aboutus{
+  margin: 0%;
+}
+
+.displayBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 150vh;
+
+   background-color:  rgb(245, 240, 243); 
+  align-items: center;
+  justify-content: center; /* Centers items horizontally */
+}
+
+
 .members_container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  height: 300px;
   justify-content: center;
   align-items: center;
 }
 
 .memeberCard{
   border: 2px solid black;
-  padding: 20px;
-  border-radius: 10px;
+  height: 60px;
+  width:100px;
+  padding: 2px;
+  border-radius: 5px;
   box-shadow: 5px 5px 15px grey;
   background-color: orange;
+ transition: transform 0.5s,background-color 0.5s;
 }
 
+.memeberCard:hover{
+  transform: scale(1.1);
+  background-color: rgb(18, 197, 27);
+  border-bottom: 2px solid black;
+}
 .city{
   color: rgb(21, 21, 216);
+  font-size:small;
 }
+
+h1{
+   font-size: small;
+}
+
+
+
+
+
+
+.selector_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
