@@ -1,6 +1,7 @@
 import AboutUs from "../src/components/AboutUs/AboutUs";
 import "./App.css";
 import Member from "../src/components/member/Member";
+import Selector from "./components/Selector";
 
 const people = [
   { name: "Alex R.", city: "New York" },
@@ -27,29 +28,20 @@ const people = [
 
 function App() {
   return (
-    <>
-      <h1
-        style={{
-          backgroundColor: "lightblue",
-          textAlign: "center",
-          padding: "20px",
-          margin: "15px",
-          borderRadius: "10px",
-          fontFamily: "Arial, sans-serif",
-          color: "darkblue",
-          boxShadow: "2px 2px 12px rgba(0, 0, 0, 0.9)",
-          cursor: "pointer",
-        }}
-      >
-        Welcome to our React Applications
-      </h1>
+    <div className="appContainer">
+      <h1 id="heading"> Welcome to our React Applications New Batch</h1>
       <AboutUs />
-      <div className="members_container">
-        {people.map((value) => {
-          return <Member name={value.name} city={value.city} />;
-        })}
+      <div className="displayBlock">
+        <div className="members_container">
+          {people.map((value) => {
+            return <Member name={value.name} city={value.city} />;
+          })}
+        </div>
+        <div className="selector_container">
+          <Selector />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
