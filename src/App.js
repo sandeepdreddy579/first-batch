@@ -29,7 +29,10 @@ const people = [
 function App() {
   return (
     <div className="appContainer">
-      <h1 id="heading"> Welcome to our React Applications New Batch</h1>
+      <h1 id="heading">
+        {" "}
+        get the message Welcome to our React Applications New Batch
+      </h1>
       <AboutUs />
       <div className="displayBlock">
         <div className="members_container">
