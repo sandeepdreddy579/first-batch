@@ -31,7 +31,7 @@ function App() {
     <div className="appContainer">
       <h1 id="heading">
         {" "}
-        get the message Welcome to our React Applications New Batch
+        the message Welcome to our React Applications New Batch
       </h1>
       <AboutUs />
       <div className="displayBlock">
